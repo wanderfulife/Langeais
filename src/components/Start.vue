@@ -236,7 +236,7 @@ import { collection, getDocs, addDoc } from "firebase/firestore";
 import * as XLSX from "xlsx";
 
 const docCount = ref(0);
-const surveyCollectionRef = collection(db, "Orleans");
+const surveyCollectionRef = collection(db, "Lqngeais");
 const level = ref(0);
 const startDate = ref('');
 const ENQUETEUR = ref('');
@@ -449,7 +449,7 @@ const downloadData = async () => {
 		const workbook = XLSX.utils.book_new();
 		XLSX.utils.book_append_sheet(workbook, worksheet, "Data"); 
 		// Export the workbook to a .xlsx file
-		XLSX.writeFile(workbook, "Orleans.xlsx");
+		XLSX.writeFile(workbook, "Langeais.xlsx");
 	} catch (error) {
 		console.error("Error downloading data: ", error);
 	}
